@@ -1,0 +1,367 @@
+/* 顶部导航栏 */
+
+body{  /* 去掉顶部空白 */
+	padding:0;
+	margin:0;	
+}
+
+a{    /* 超链接去掉下划线 */
+	text-decoration: none;
+}
+
+.centered{  /* 居中 */
+	width: 1226px;
+	margin: 0 auto;
+}
+
+.d1{    /* 顶部导航栏总体区块*/
+	background-color: #333333;
+	width: 100%;
+	height:40px;
+}
+.d1 a{  /* 顶部导航栏所有超链接 */
+	font-size:12px; 
+	color:#b0b0b0;
+}
+.d1 a:hover{  /*鼠标移上变色效果*/
+	color: #fff;
+}
+.d1 span{    /* 竖杠 */
+	font-size:12px;
+	color:#666;
+	padding: 0px 3px;
+	
+	
+}
+.d1_text1{   /* 靠左的文字 */
+	float: left;
+	height:40px;
+	line-height:40px;
+}
+
+.d1-text2{   /* 靠右的文字 */
+	float: right;
+	margin-right: 10px;
+	height:40px;
+	line-height:40px;
+}
+
+.d1-cart{    /* 购物车  */
+	float: right;
+}
+.d1-cart a{   /* 购物车超链接  */
+	display:block;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	width:120px;
+	background-color:#424242;
+}
+.d1-cart a:hover{   /* 购物车鼠标移上效果  */
+	background-color: #fff;
+	color: #ff6700;
+}
+
+
+/*头部导航栏*/
+
+.d2{  /*头部导航栏总体区块*/
+	height: 120px;
+}
+
+.d2_logo{  /*小米logo*/
+	float: left;
+}
+.d2_logo a{  /* logo超链接格式 */
+	display: block;
+	height: 55px;
+	width:55px;
+	margin-top: 22px;
+	background-color: #FF6700;
+}
+.d2_logo a img{ /*logo图片大小 */
+	height: 55px;
+	width:55px;
+}
+
+.d2_text{  /* 文字 */
+	float: left;
+	width: 820px;
+	height: 120px;
+	margin-left: 40px;
+}
+.d2_text a{  /*超链接文字大小 颜色 */
+	font-size:16px;
+	color: #333;
+}
+.d2_text a:hover{ /*鼠标移上变色效果*/
+	color: #FF6700;
+}
+.d2_text ul{  /* 列表文字向下移40px */
+	margin: 0px;
+	padding: 0px;
+	margin-top:40px;
+}
+.d2_text ul li{ /* 列表格式 */
+	float: left;
+	list-style-type: none;
+	displfay:block;
+	padding: 0px 10px; /*内边距为10px 两字段就间隔20px*/ 
+}
+
+ /*搜索框 */
+.d2_search{   /*搜索框 */
+	float: right;
+	width: 296px;
+	height: 50px;
+	margin-top: 25px;
+	
+}
+.d2_search_text{  /* 输入框大小 */
+	width: 246px;
+	height: 50px;
+}
+.d2_search_text:focus{   /* 输入框边框点击时变色 */
+	outline:none;   /* 去除边框 */
+	border: 1px solid #FF6700;
+}
+.d2_search_button{  /* 搜索按钮大小 */
+	width: 50px;
+	height: 50px;
+	float: right;
+	cursor: pointer; /* 鼠标变成小手的形状  */
+}
+.d2_search_button:hover{  /*鼠标移上变色效果*/
+	border:none;
+	background-color: #FF6700;
+	color: #fff;
+}
+
+
+/*抢购时间和商品信息栏*/
+
+.d3{
+	background-color:#f5f5f5;
+	height: 820px;
+	
+}
+.d3_tu{   /* 图片*/
+	height: 190px;
+	background-image: url(../img/seckill-head.jpg);
+}
+
+.d3_time{  /* 抢购时间栏  */
+	float: left;
+}
+.d3_time ul{   /* 列表格式*/
+	margin: 0px;
+	padding: 0px;
+	background-color: #333333;
+	height: 70px;
+	width: 1226px;
+	margin-top: -70px;
+}
+.d3_time ul li{  /* 五等分 */
+	display: block;
+	width: 20%;
+	height: 70px;
+	float: left;
+	color: #fff;
+	line-height: 70px;
+	text-align: center;	
+	cursor:pointer;
+}
+.d3_time em{  /*时间文字*/
+	display:inline-block;
+    font-size:16px;
+	line-height:1;
+	font-style:normal;
+	vertical-align:middle;
+}
+.d3_time span{  /* 即将开始文字*/
+	display:inline-block;
+	font-size:12px;
+	line-height:1;
+	text-align:left;
+	margin-left:15px;
+	margin-top: 6px;
+	vertical-align:middle;
+}
+.active{  /* 第一块的背景颜色 */
+	 background-color:#f1393a;
+}
+
+/*商品信息列表*/
+.d3_goods ul{  /* 列表格式*/
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.d3_goods li{   /*每个列表的大小*/
+	float:left;
+	width:400px;
+	height:190px;
+	background-color:#fff;
+	margin-top: 13px;	
+}
+.d3_spm{  /* 信息列表的中间间隔  */
+	margin-left: 13px;
+}
+/* 清理浮动 */
+.d3_fix::before{
+	content:"";
+	display:table;
+}
+
+.d3_fix::after{
+	content:"";
+	display:table;
+	clear:both;
+}
+
+/*一个信息列表开始*/
+.d3_png{   /* 图片部分排序 */
+	width:190px;
+	height:190px;
+	float:left;
+}
+
+.d3_png img{  /* 图片大小 */
+	height:190px;
+	width: 190px;
+	transition: all 1s;
+}
+ .d3_png img:hover{ /*图片缩放*/
+	transform: scale(2,2);
+}
+
+.d3_info{    /* 文字部分 */
+	width:210px;
+	height:190px;
+	margin-left:200px;	
+}
+
+
+.d3_name{   /* 第一栏文字 */
+	color: #333;
+	font-size: 16px;
+	white-space: nowrap; /*强制文本不换行*/
+	overflow: hidden;   /* 将溢出的文本裁剪*/
+	text-overflow: ellipsis;  /*将裁剪的文本显示为省略号*/
+	margin-right: 20px;
+}
+
+.d3_des{  /* 第二 ，五栏文字 */
+	font-size:10px;
+	color:#B0B0B0;
+}
+
+.d3_price{  /* 第三栏文字 */
+	margin-top:16px;
+	color:#f1393a;
+}
+
+.d3_info del{   /* 后面价格中间斜杠 */
+	font-size:10px;
+	color:#B0B0B0;
+	padding-left:5px;
+}
+
+.d3_gobuy{   /* 第四栏文字 */
+	display:inline-block;
+	display: block;
+	height: 25px;
+	width: 100px;
+	background-color:#f1393a;
+	color:#fff;
+	line-height:25px;
+	text-align:center;
+}
+/*商品信息列表完毕*/
+
+/* 活动规则文字 */
+.d3_text{    
+	color: #B0B0B0;
+	font-size: 10px;
+	margin-top: 110px;
+	margin-bottom: 25px;
+}
+
+
+/*页底部信*/
+
+.d4 {   
+	height: 250px;
+	width:100%;
+}
+.d4_text1{    /* 预约维修服务等文字 */
+	float: left;
+	width: 1226px;
+}
+.d4_text1 ul{    /* 列表格式 */
+	margin: 0px;
+	padding: 0px;
+	height:80px;
+		
+}
+   
+.d4_text1 ul li{  /* 五等法 */
+	float:left;
+	height:80px;
+	width:20%;
+	display:block;
+	line-height:80px;
+	text-align:center;
+	
+}
+.d4_text1 ul li p{   /* 文字大小 颜色 */
+	margin: 0px;
+	padding: 0px;
+	font-size:16px;
+	color:#333;
+}
+.d4_text1 ul li span{  /*竖杠*/
+	margin-top: -80px;  
+	margin-left: 100%;
+	display: block;
+	color:#999;
+}
+tr{   /* 横杠*/
+	margin-top: -8px;
+}
+
+  /*底部信息栏*/
+
+.d4_text2{    /* 底部帮助文字 */
+	height:170px;
+	margin-top: -8px;
+}
+.d4_text2 ul{   /* 五等分 */
+	margin: 0px;
+	padding: 0px;
+	height: 170px;
+		
+}
+.d4_text2 ul li{  /* 每一块区域的格式 */
+	display: block;
+	float: left;
+	width: 20%;
+	height: 170px;
+	text-align: center;
+}
+.d4_text2 a{  /* 底下3行文字颜色  大小 */
+	color: #333;
+	font-size: 12px;
+	
+}
+.d4_text2 span a{  /*第一行的文字 */
+	display: block;
+	font-size: 14px;
+	margin-top: 20px;
+	margin-bottom: 25px;
+	
+}
+.d4_text2 a:hover{   /* 购物车鼠标移上效果  */
+	color: #FF6700;
+}
